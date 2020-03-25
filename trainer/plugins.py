@@ -96,8 +96,8 @@ class AbsoluteTimeMonitor(Monitor):
 
 class SaverPlugin(Plugin):
 
-    last_pattern = 'ep{}-it{}'
-    best_pattern = 'best-ep{}-it{}'
+    last_pattern = 'ep{}-it{}.pt'
+    best_pattern = 'best-ep{}-it{}.pt'
 
     def __init__(self, checkpoints_path, keep_old_checkpoints):
         super().__init__([(1, 'epoch')])
